@@ -34,7 +34,7 @@ html, body {
 #main-title {
     color: #162130;
     margin-top: 20px;
-
+    margin-bottom: 30px;
 
     font-family: 'Caveat', cursive;
     font-size: 86px;
@@ -68,6 +68,7 @@ html, body {
 /*#region Figure*/
 .figure-container {
     align-self: flex-start;
+    margin-bottom: -20px;
 }
 
 #peeking-figure {
@@ -76,3 +77,20 @@ html, body {
     margin-left: -62px;
 }
 /*#endregion Figure*/
+
+/*#region Media Queries*/
+@media only screen and (max-height: 730px) {
+    #main-logo {
+        height: 23px;
+    }
+
+    #main-title {
+        font-size: 70px;
+    }
+
+    #peeking-figure {
+        height: 170px;
+        margin-left: -30px;
+    }
+}
+/*#endregion Media Queries*/
