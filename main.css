@@ -37,6 +37,16 @@ button {
     background-color: #1971EC;
     border: none;
     color: white;
+    box-shadow: #7c7c7c57 2px 2px 10px;
+}
+
+button:hover {
+    box-shadow: #7c7c7cb4 2px 2px 10px;
+    background-color: #206fdd;
+}
+
+button:active {
+    background-color: #1555ad;
 }
 
 /*#region Title Container*/
