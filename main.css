@@ -23,6 +23,22 @@ html, body {
     position: absolute;
 }
 
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: large;
+    line-height: 27px;
+}
+
+button {
+    padding: 10px 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: large;
+    border-radius: 10px;
+    background-color: #1971EC;
+    border: none;
+    color: white;
+}
+
 /*#region Title Container*/
 .title-container {
     display: flex;
@@ -56,6 +72,15 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.download-container {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.download-container > p {
+    max-width: 400px;
 }
 /*#endregion Center Container */
 
@@ -96,18 +121,50 @@ html, body {
 /*#endregion Footer*/
 
 /*#region Media Queries*/
-@media only screen and (max-height: 730px) {
+@media only screen and (max-width: 850px) {
+    .figure-container {
+        margin-bottom: -140px;
+    }
+}
+
+@media only screen and (max-height: 550px), (max-width: 710px) {
+    .title-container {
+        margin-top: 0;
+    }
+
     #main-logo {
-        height: 23px;
+        height: 20px;
     }
 
     #main-title {
-        font-size: 70px;
+        font-size: 60px;
+        line-height: 45px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .download-container {
+        margin-bottom: 40px;
+    }
+
+    .figure-container {
+        margin-top: 0;
     }
 
     #peeking-figure {
         height: 170px;
         margin-left: -30px;
+        visibility: hidden;
+    }
+
+    .footer {
+        margin-bottom: 0;
+        margin-top: 30px;
+        padding: 15px;
+    }
+
+    .footer > p, .footer > a {
+        margin: 0;
     }
 }
 /*#endregion Media Queries*/
